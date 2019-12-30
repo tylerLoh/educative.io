@@ -17,7 +17,6 @@ for word in words:
 
 print(reg_dict)
 
-
 # if with defaultdict
 from collections import defaultdict
 
@@ -26,7 +25,6 @@ for word in words:
     d[word] += 1
 
 print(d)
-
 
 # list type as default factory
 my_list = [(1234, 100.23), (345, 10.45), (1234, 75.00),
@@ -48,3 +46,10 @@ for acct_num, value in my_list:
     d[acct_num].append(value)
 
 print(d)
+
+# lambda
+# default_factory impossible to cause a KeyError if key set is not None
+animal = defaultdict(lambda: "Monkey")
+animal['Sam'] = 'Tiger'
+print(animal['Nick'])
+
