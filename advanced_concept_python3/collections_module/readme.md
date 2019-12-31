@@ -1,4 +1,4 @@
-### Coleections module in Python
+### Collections module in Python
 
 Python's collections modules has specialized container datatypes that can be used to repalce Pyhon general purpose containers (dict, tuple, list and set).
 

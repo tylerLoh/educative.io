@@ -9,7 +9,7 @@
 
 """
 
-# dict order may be diff evertime when execute, especially add new items
+# dict order may be diff overtime when execute, especially add new items
 d = {'banana': 3, 'apple': 4, 'pear': 1, 'orange': 2}
 print(f"regular dict {d}")
 

@@ -59,4 +59,17 @@ def get_last(filename, n=5):
         raise
 
 
-print(get_last("./deque.py"))
+k = get_last("./deque.py")
+print(k)
+
+k.append('new append to end')
+print(k)
+
+k.appendleft('new append to start')
+print(k)
+
+# 1
+# 2
+# 3
+# 4
+# 5
