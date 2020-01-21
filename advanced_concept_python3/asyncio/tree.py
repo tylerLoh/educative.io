@@ -5,7 +5,10 @@ import os
 mutex = asyncio.Lock()
 
 # read file and remove trailing whitespace into list
-bless = list(open('tree.txt').readline().rstrip())
+with open('tree.txt') as fp:
+    bless = list(fp.readline())
+    bless += list(fp.readline().rstrip())
+# bless = list(open('tree.txt').readline().rstrip())
 tree = list(open('tree.txt').read().rstrip())
 
 
@@ -32,7 +35,7 @@ async def lights(color, indexes):
 
         off = not off
 
-        await asyncio.sleep(random.uniform(0.2, .5))
+        await asyncio.sleep(random.uniform(0.3, .5))
 
 
 async def bless_lights(indexes):
